@@ -1,5 +1,6 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +8,57 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- CSS File -->
     <link rel="stylesheet" href="styles/index.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 10px;
+        }
+
+        main {
+            height: calc(100vh - 70px);
+            display: flex;
+            background-color: #f9f9f9;
+        }
+
+        .side-bar {
+            height: 100%;
+            width: 17%;
+            background-color: white;
+            overflow-y: hidden;
+        }
+
+        /* Media Query */
+        @media (max-width: 768px) {
+            .side-bar {
+                display: none;
+            }
+        }
+    </style>
     <title>Youtube Clone with HTML & CSS</title>
-  </head>
-  <body>
-      <header class="header">.</header>
-      <main>
-          <div class="side-bar">.</div>
-          <div class="content">.</div>
-      </main>
-  <!-- Main Body Ends -->
+</head>
+
+<body>
+    <header class="header">.</header>
+    <main>
+        <div class="side-bar">.</div>
+        <div class="content">.</div>
+    </main>
+    <!-- Main Body Ends -->
 </body>
+
 </html>
