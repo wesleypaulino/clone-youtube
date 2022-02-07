@@ -21,12 +21,13 @@
             font-family: 'Roboto', sans-serif;
         }
 
+        /* header section*/
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 60px;
-            padding: 10px;
+            padding: 15px;
         }
 
         main {
@@ -35,6 +36,7 @@
             background-color: #f9f9f9;
         }
 
+        /* Sidebar */
         .side-bar {
             height: 100%;
             width: 17%;
@@ -42,18 +44,88 @@
             overflow-y: hidden;
         }
 
-        /* Media Query */
         @media (max-width: 768px) {
             .side-bar {
                 display: none;
             }
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .left #menu {
+            padding: 0 7px;
+            cursor: pointer;
+        }
+
+        .search {
+            display: flex;
+        }
+
+        .search form {
+            display: flex;
+            border: 1px solid #ddd;
+            height: 45px;
+        }
+
+        .search input {
+            width: 600px;
+            padding: 10px;
+            border: 0;
+            height: 100%;
+            border-radius: 2px 0 0 2px
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid #ddd;
+        }
+
+
+        .search button {
+            height: 100%;
+            width: 60px;
+            border: none;
+        }
+
+        .mic {
+            margin-top: 10px;
+        }
+
+        .material-icons {
+            color: rgb(100, 100, 100);
+            padding: 0 7px;
+            cursor: pointer;
         }
     </style>
     <title>Youtube Clone with HTML & CSS</title>
 </head>
 
 <body>
-    <header class="header">.</header>
+    <header>
+        <div class="logo left">
+            <i id="menu" class="material-icons">menu</i>
+            <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png">
+            <div class="search center">
+                <form action="">
+                    <input type="text" placeholder="Search" />
+                    <button><i class="material-icons">search</i></button>
+                </form>
+                <i class="material-icons mic">mic</i>
+            </div>
+
+            <div class="icons right">
+                <i class="material-icons">videocam</i>
+                <i class="material-icons">apps</i>
+                <i class="material-icons">notifications</i>
+                <i class="material-icons display-this">account_circle</i>
+            </div>
+        </div>
+
+
+    </header>
     <main>
         <div class="side-bar">.</div>
         <div class="content">.</div>
